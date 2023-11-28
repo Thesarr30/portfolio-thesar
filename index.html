@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Matz - UI/UX Design & Video Editor.</title>
+    <meta name="title" content="Matz - UI/UX Design & Video Editor." />
+    <meta
+      name="description"
+      content="This is a personal portfolio html template made by codewithsadee"
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/font/font.css" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png" />
+  </head>
+
+  <body id="top">
+    <!-- #PRELOADER -->
+
+    <div class="preloader" data-preloader>
+      <span class="line"></span>
+    </div>
+
+    <!-- #HEADER -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#home" class="logo">
+          <img
+            src="./assets/images/logo.svg"
+            width="84"
+            height="26"
+            alt="logo"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.svg"
+                width="84"
+                height="26"
+                alt="logo"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li>
+              <a href="#service" class="navbar-link" data-nav-link>Services</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link" data-nav-link>About</a>
+            </li>
+
+            <li>
+              <a href="#project" class="navbar-link" data-nav-link>Project</a>
+            </li>
+
+            <li>
+              <a href="#review" class="navbar-link" data-nav-link>Quotes</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#contact" class="btn btn:hover">
+          <span class="span">Get A Quote</span>
+
+          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button
+          class="nav-open-btn btn:hover"
+          aria-label="open menu"
+          data-nav-toggler
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </button>
+
+        <div class="overlay" data-overlay data-nav-toggler></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- #HERO -->
+
+        <div class="hero text-center" id="home">
+          <div class="container">
+            <div class="banner-outline has-after">
+              <div
+                class="hero-banner img-holder has-after"
+                style="--width: 500; --height: 680"
+                data-tilt
+              >
+                <img
+                  src="./assets/images/matz.png"
+                  width="500"
+                  height="680"
+                  alt="Achmad Firdaus Thesar"
+                  class="img-cover"
+                />
+              </div>
+
+              <span class="span title">Achmad Firdaus Thesar</span>
+            </div>
+
+            <div class="hero-content">
+              <h1 class="h1 title">UI/UX Design & Video Editor.</h1>
+
+              <div class="wrapper">
+                <a href="https://linktr.ee/onlymatz" class="btn btn:hover">
+                  <span class="span">Follow Me</span>
+
+                  <ion-icon name="link" aria-hidden="true"></ion-icon>
+                </a>
+
+                <p class="hero-text">
+                  <b>Just a beginner</b> Designer & Video Editor. (for real
+                  coyy)
+                </p>
+              </div>
+            </div>
+
+            <img
+              src="./assets/images/hero-shape-1.png"
+              width="559"
+              height="232"
+              alt="shape"
+              class="shape shape-1"
+            />
+
+            <img
+              src="./assets/images/hero-shape-2.png"
+              width="1358"
+              height="497"
+              alt="shape"
+              class="shape shape-2"
+            />
+          </div>
+        </div>
+
+        <!-- #SERVICE -->
+
+        <section
+          class="service text-center"
+          aria-label="my services"
+          id="service"
+        >
+          <div class="container">
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/service-icon-1.svg"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      Web <br />
+                      Development
+                    </a>
+                  </h3>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/service-icon-2.svg"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      Digital <br />
+                      Marketing
+                    </a>
+                  </h3>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/service-icon-3.svg"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      UI/UX <br />
+                      Designer
+                    </a>
+                  </h3>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/service-icon-4.svg"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">
+                      Video <br />
+                      Editor
+                    </a>
+                  </h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- #ABOUT -->
+
+        <section class="section about" aria-label="about-me" id="about">
+          <div class="container">
+            <div class="tab-container">
+              <ul class="tab-btn-list">
+                <li class="tab-btn-item">
+                  <button class="tab-btn title h6 active" data-tab-btn="about">
+                    About Me
+                  </button>
+                </li>
+
+                <li class="tab-btn-item">
+                  <button class="tab-btn title h6" data-tab-btn="skillset">
+                    Skillset
+                  </button>
+                </li>
+
+
+              <div class="tab-content active" data-tab-content="about">
+                <div class="grid-list">
+                  <figure
+                    class="about-banner img-holder"
+                    style="--width: ; --height: "
+                    data-tilt
+                  >
+                    <img
+                      src="./assets/images/about-banner.jpg"
+                      width="570"
+                      height="420"
+                      loading="lazy"
+                      alt="about banner"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="about-content">
+                    <h2 class="h4 title section-title">Introduce.</h2>
+
+                    <p class="section-text">
+                      Perkenalkan nama saya
+                      <b
+                        >Achmad Firdaus Thesar, Kelas XI RPL 1, Umur saya 16
+                        tahun, 30 April 2007 di Karawang.</b
+                      >
+                      Saya bersekolah di <b>SMKN 1 Karawang</b> dan jurusan saya
+                      adalah <b>Rekayasa Perangkat Lunak(RPL).</b> Saya memiliki
+                      ketertarikan yaitu mengedit video & mendesain sejak ada
+                      nya covid-19, lalu tak lama kemudian saya tertarik untuk
+                      menjadi Programmer. <b>Kreativitas dan Ketelitian</b> adalah
+                      dua aspek yang selalu saya usahakan dalam setiap langkah saya.
+                    </p>
+
+                    <ul class="about-list">
+                      <li class="about-item">
+                        <p class="list-title">Name</p>
+
+                        <span class="span title h5">Achmad Firdaus Thesar</span>
+                      </li>
+
+                      <li class="about-item">
+                        <p class="list-title">Phone Number</p>
+
+                        <span class="span title h5">+62 838-7418-7722</span>
+                      </li>
+
+                      <li class="about-item">
+                        <p class="list-title">Email Address</p>
+
+                        <span class="span title h5">info@thesarkun.com</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-content" data-tab-content="skillset">
+                <div class="grid-list">
+                  <div class="skill-content">
+                    <h3 class="h4 title section-title">My Skills.</h3>
+
+                    <p class="section-text">Skill yang saya sudah pelajari.</p>
+
+                    <ul class="skill-list">
+                      <li>
+                        <div class="skill-wrapper">
+                          <span class="span">Website Development</span>
+
+                          <span class="value">65%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="skill-wrapper">
+                          <span class="span">Design UI & UX</span>
+
+                          <span class="value">82%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 82%"></div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="skill-wrapper">
+                          <span class="span">Video Editing</span>
+
+                          <span class="value">88%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 88%"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <figure
+                    class="skill-banner img-holder"
+                    style="--width: 570; --height: 420"
+                    data-tilt
+                  >
+                    <img
+                      src="./assets/images/skill-banner.jpg"
+                      width="570"
+                      height="420"
+                      loading="lazy"
+                      alt="skill banner"
+                      class="img-cover"
+                    />
+                  </figure>
+                </div>
+              </div>
+        </section>
+
+        <!-- #CTA -->
+
+        <section class="section cta" aria-label="work with me">
+          <div class="container">
+            <h2 class="title h2 section-title text-center">
+              This is my project that I've made!
+            </h2>
+
+            <a href="#" class="btn btn:hover">
+              <span class="span">Hire Me Now</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+        </section>
+
+        <!-- #PROJECTS -->
+
+        <section
+          class="section project"
+          aria-label="my latest projects"
+          id="project"
+        >
+          <ul class="slider-list">
+            <li class="slider-item">
+              <div class="project-card text-center">
+                <div
+                  class="card-banner img-holder has-before"
+                  style="--width: 1000; --height: 763"
+                >
+                  <img
+                    src="./assets/images/tugas-bootstrap.png"
+                    width="1000"
+                    height="763"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+
+                  <a href="https://thesarr30.github.io/Tugas-Bootstrap/" class="btn btn:hover">
+                    <span class="span">Project Details</span>
+
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Web, Product</p>
+
+                  <h3 class="title h3">
+                    <a href="#" class="card-title"
+                      >Tugas Bootstrap 2</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="project-card text-center">
+                <div
+                  class="card-banner img-holder has-before"
+                  style="--width: 1000; --height: 763"
+                >
+                  <img
+                    src="./assets/images/tugas-ccs-2.png"
+                    width="1000"
+                    height="763"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+
+                  <a href="https://thesarr30.github.io/Tugas-CSS2/" class="btn btn:hover">
+                    <span class="span">Project Details</span>
+
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Web, Blog</p>
+
+                  <h3 class="title h3">
+                    <a href="#" class="card-title"
+                      >Tugas CSS 2</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="project-card text-center">
+                <div
+                  class="card-banner img-holder has-before"
+                  style="--width: 1000; --height: 763"
+                >
+                  <img
+                    src="./assets/images/tugas-fomr-signup.png"
+                    width="1000"
+                    height="763"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover"
+                  />
+
+                  <a href="https://github.com/Thesarr30/Tugas-Form-PWB" class="btn btn:hover">
+                    <span class="span">Project Details</span>
+
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Web, Form</p>
+
+                  <h3 class="title h3">
+                    <a href="#" class="card-title"
+                      >Tugas Form Sign Up</a
+                    >
+                  </h3>
+                </div>
+              </div>
+            </li>
+        </section>
+
+        <!-- #TESTIMONIALS -->
+
+        <section
+          class="section testi"
+          aria-label="what our client says"
+          id="review"
+        >
+          <div class="container">
+            <div class="testi-content">
+              <blockquote class="title h4 section-text">
+                &ldquo; I choose a lazy person to do a hard job. Because a lazy
+                person will find an easy way to do it. &rdquo;
+              </blockquote>
+
+              <div class="profile-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 70; --height: 70"
+                >
+                  <img
+                    src="./assets/images/bill-gates.png"
+                    width="70"
+                    height="70"
+                    loading="lazy"
+                    alt="Bill Gates."
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div>
+                  <p class="title h5 card-title">Bill Gates.</p>
+
+                  <p class="card-subtitle">Founder of Microsoft Corporation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- #CONTACT -->
+
+        <section class="section contact" aria-label="contact me" id="contact">
+          <div class="container">
+            <h2 class="title h2 section-title">Get In Touch</h2>
+
+            <div class="contact-content">
+              <form action="./index.html" method="post" class="contact-form">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full name"
+                  autocomplete="off"
+                  required
+                  class="input-field"
+                />
+
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Email address"
+                  autocomplete="off"
+                  required
+                  class="input-field"
+                />
+
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone"
+                  autocomplete="off"
+                  class="input-field"
+                />
+
+                <textarea
+                  name="message"
+                  placeholder="Enter massges"
+                  required
+                  class="input-field"
+                ></textarea>
+
+                <button type="submit" class="btn btn:hover">
+                  <span class="span">Get A Quote</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </form>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.99539013969!2d105.7894695!3d-4.221159099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3e554ff94189a3%3A0x25bbb56f9502224f!2sISEKAI%20ISLAND!5e0!3m2!1sid!2sid!4v1700987126098!5m2!1sid!2sid  "
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="map"
+              ></iframe>
+
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <div class="item-icon">
+                    <img
+                      src="./assets/images/contact-icon-1.png"
+                      width="50"
+                      height="50"
+                      loading="lazy"
+                      alt="contact icon"
+                    />
+                  </div>
+
+                  <div>
+                    <span class="title h6">+62 838-7418-7722</span>
+                  </div>
+                </li>
+
+                <li class="contact-item">
+                  <div class="item-icon">
+                    <img
+                      src="./assets/images/contact-icon-3.png"
+                      width="50"
+                      height="50"
+                      loading="lazy"
+                      alt="contact icon"
+                    />
+                  </div>
+
+                  <div>
+                    <span class="title h6">info@thesarkun.com</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- #FOOTER -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">Copyright & Design By @Matz - 2023</p>
+
+        <a href="#top" class="back-top-btn">
+          <span class="span">Back To Top</span>
+
+          <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+        </a>
+      </div>
+    </footer>
+
+    <!-- #CUSTOM CURSOR -->
+
+    <div class="cursor-dot" data-cursor></div>
+    <div class="cursor-outline" data-cursor></div>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
